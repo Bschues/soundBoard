@@ -1,0 +1,28 @@
+@import 'materialize.scss';
+
+.cell {
+  height: 10em;
+  width: 10em;
+  border: 1px solid black;
+  margin: 1.2em;
+
+  @extend .hoverable;
+  @extend .blue-grey;
+  @extend .lighten-2;
+  @extend .z-depth-1;
+}
+
+#padOutput {
+  display: flex;
+  justify-content: center;
+}
+
+h6 {
+  @extend .white;
+}
+
+li,
+.btn {
+  padding-top: 1em;
+  margin-top: 1em;
+}

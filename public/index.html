@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jake Johnson</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/materialize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.createjs.com/soundjs-0.6.2.min.js"></script>
+</head>
+
+<body onload="loadSound();">
+  <nav>
+    <div class="nav-wrapper blue-grey darken-3">
+      <a href="#" class="brand-logo right">Soundboard</a>
+
+    </div>
+  </nav>
+
+
+  <div class="center">
+    <h5 id="err"></h5>
+
+    <div id="padOutput"></div>
+
+
+  </div>
+  <div class="fixed-action-btn toolbar ">
+    <a class="btn-floating blue-grey darken-3">
+      <i class="material-icons">attach_file</i>
+    </a>
+    <ul>
+
+
+
+
+      <form method='post' , action='/public/audio' , enctype='multipart/form-data' class='center toolbarForm' )>
+        <label class='uploadLabel'>
+          <li>
+            <i class="small material-icons" id='uploadLabel'>library_add</i>
+
+
+            Upload Sound
+          </li>
+          <input type="file" name="audioFile" style='display: none;' size="60" id="file">
+        </label>
+        <li>
+          <button class="submit btn grey lighten-1" type="submit">Submit</button>
+        </li>
+
+      </form>
+      </li>
+
+
+
+
+  </div>
+
+
+
+  <script src="classes/Grid.js"></script>
+  <script src="classes/Cell.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
